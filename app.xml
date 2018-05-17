@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--This is the prolog. It ensures the encoding is UTF-8, the default for HTML-->
+
+<!--xmlns is the eXtensible Markup Language Name Space-->
+<!--change the id to com.YourName.AppName-->
+<widget 	xmlns				= "http://www.w3.org/ns/widgets"
+		xmlns:gap			= "http://phonegap.com/ns/1.0"
+		id				= "com.mariabultena.TrafficCam"
+		versionCode			= "1"
+		version  			= "1.0.0" >
+
+<!--Change the name to the name of your app-->
+	<name>Local Traffic Cams</name>
+	
+<!--Change the description to match your app-->
+	<description>See updated stills from traffic cameras in the Tri-Cities.</description>
+	
+<!--href needs to be your github repository and your name should be the author-->
+	<author href = "http:github.com/mariabultena/Traffic-Cams" email = "codingmcp@gmail.com"> Maria Bultena </author>
+	
+<!--sets permissions and plugins for device-->
+	<allow-navigation href="*" />
+	<allow-intent href="*" />
+	<access origin="*" />
+
+	<plugin name="cordova-plugin-whitelist" spec="~1.3.2" />
+	
+<!--sets images for the widgets MUST match the names of your images-->
+	<icon src = "launcher.png" 
+      	gap:platform = "android" gap:qualifier = "ldpi" />
+		
+  	<icon src = "launcher.png" 
+      	gap:platform = "android" gap:qualifier = "mdpi" />
+		
+   	<icon src = "HDPI.png" 
+      	gap:platform = "android" gap:qualifier = "hdpi" />
+		
+   	<icon src = "XHDPI.png" 
+      	gap:platform = "android" gap:qualifier = "xhdpi" />
+		
+   	<icon src = "XXHDPI.png" 
+      	gap:platform = "android" gap:qualifier = "xxhdpi" />
+
+   	<icon src = "XXHDPI.png" 
+      	gap:platform = "android" gap:qualifier = "xxxhdpi" />
+
+</widget>
